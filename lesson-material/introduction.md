@@ -20,6 +20,12 @@ In North America, a **wrangler** is someone who is employed to handle animals pr
 
 Data can come in various forms and can be accessed in several different ways, but the process of cleaning and transforming data stays more or less the same.
 
+### The data wrangling process
+1. Read the data into a structured form (like Pandas data structures below)
+2. Investigate the data to find missing values, outliers, and other potential problems
+3. Clean the data to fix the issues identified
+4. Use data for analysis or other purposes
+
 ### Why is it an important skill?
 
 > 80% of the data analysis process is spent cleaning and preparing data
@@ -28,9 +34,20 @@ Data sources used in academics tend to be pre-processed and much cleaner than da
 
 Data preparation is not just a first step, but must be repeated many times over the course of analysis as new problems come to light or new data is collected.
 
-For some general guidelines on what clean data really means, check out the referenes section below.
-
 ![](./images/real-data.jpg)
+
+## What is clean data?
+
+> Happy families are all alike; every unhappy family is unhappy in its own way <br>
+\- Leo Tolstoy
+
+There is no easy to follow set of rules when it comes to cleaning data because it usually depends on what you intend to do with the data. However, there are some general guidelines we can learn from:
+1. Data should be stored in a structured format, with labeled rows and columns
+2. Each row in the dataset represents and observation (a person, an object, an event)
+3. Each column describes a characteristic of the observation (a person's height or name)
+4. Each type of observation is stored in a separate table (don't mix people with objects)
+
+For more details on what clean data really means, check out the paper on Tidy Data in referenes section below.
 
 ## What is Pandas?
 
@@ -51,6 +68,11 @@ Pandas allows us to store our data in different data structures represented by P
 ### Common functions
 
 Once our data is stored in one of the two data structures, pandas has many different functions we can use to manipulate and summarize data. This not only includes operations on a single data structure, like adding, removing data and summarizing data, but also includes operations on multiple data structures to combine them.
+
+Some common operations include:
+- checking for outliers in your data, and deciding what to do with them (keep or remove)
+- filtering your dataset (AKA slicing) based on one or more conditions
+- adding new rows or columns by combining or splitting existing rows or columns
 
 For a complete list of all functions, see Pandas documentation in the references section below.
 
