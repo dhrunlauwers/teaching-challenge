@@ -5,7 +5,7 @@ Welcome to the 15-minute crash course on data wrangling with Pandas.
 ## **Outline and Structure**
 The course will feature a short introduction of the key concepts, a quick demonstration, and some resources for further learning. 
 
-### **Introduction**
+### [**Introduction**](./lesson-material/introduction.md)
 1. Who am I?
 2. What is data wrangling, and why is it an important skill?
 3. What is Pandas?
@@ -17,7 +17,7 @@ The course will feature a short introduction of the key concepts, a quick demons
     - Cleaning and manipulating data
 5. References and further reading
 
-### **Demonstration**
+### [**Demonstration**](./lesson-material/demonstration.ipynb)
 1. Read in data from source file
 2. Summarize the data to reveal issues
 3. Manipulating data for cleanup
