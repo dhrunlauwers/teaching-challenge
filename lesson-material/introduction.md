@@ -1,28 +1,28 @@
 # Introduction - Data Wrangling with Pandas
 
 ## Who am I?
+<img style="float: left;" src="./images/dhrun.PNG" width="160" height="163">
 
-![](./images/dhrun.PNG)
+    Name: Dhrun Lauwers 
+    Born: Antwerp, Belgium 
+    Lives: Toronto, Canada 
+    Interests: Food, technology, physical movement 
+    Occupation: Leading a small team of data scientists and engineers for a large retail company in Canada.
 
-**Name:** Dhrun Lauwers <br>
-**Born:** Antwerp, Belgium <br>
-**Lives:** Toronto, Canada <br>
-**Interests:** Food, technology, physical movement <br>
-**Occupation:** Leading a small team of data scientists and engineers for a large company in Canada.
-
-TODO: add some images
 
 ## What is data wrangling?
 
 ![](./images/wrangler.jpg)
 
-Data wrangling is the process of accessing and transforming data so that the result can be easily summarized and used for analysis and other purposes.
+In North America, a **wrangler** is someone who is employed to handle animals professionally, especially horses. They would round up and take care of the cattle for ranchers and cowboys to use.
+
+**Data wrangling** is the process of accessing and transforming data so that the result can be easily summarized for analysis and other purposes. This process is typically carried out by data engineers, who prepare data for the data scientists to analyze.
 
 Data can come in various forms and can be accessed in several different ways, but the process of cleaning and transforming data stays more or less the same.
 
 ### Why is it an important skill?
 
-> 80% of the data analysis process is spent on the process of cleaning and preparing data
+> 80% of the data analysis process is spent cleaning and preparing data
 
 Data sources used in academics tend to be pre-processed and much cleaner than data used in the industry, so this is a very important skill to develop when you start working in the field.
 
@@ -40,7 +40,7 @@ As with all libraries, it's important to get some practice using them and to mak
 
 ### Data structures
 
-Pandas is short for *'panel-data'*, which refers to the nature of the way data is stored in Pandas.
+Pandas is short for *panel-data*, which refers to the nature of the way data is stored in Pandas.
 
 Pandas allows us to store our data in different data structures represented by Python objects, and to perform operations on these objects. The most common data structures include:
 1. Series: A one-dimensional array of data with labels. 
@@ -65,6 +65,8 @@ Now to get wrangling! Open up the [Jupyter notebook associated with this lesson]
 
 [Pandas - Intro to Data Structures](https://pandas.pydata.org/pandas-docs/stable/getting_started/dsintro.html)
 
-[Pandas Practice]
+[Pandas Practice - w3 resource](https://www.w3resource.com/python-exercises/pandas/index.php)
+
+[Pandas Practice](https://github.com/guipsamora/pandas_exercises)
 
 
