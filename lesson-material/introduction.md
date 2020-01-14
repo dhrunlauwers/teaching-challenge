@@ -54,6 +54,17 @@ Once our data is stored in one of the two data structures, pandas has many diffe
 
 For a complete list of all functions, see Pandas documentation in the references section below.
 
+### Missing data
+
+It's very common that you will get a dataset where values for certain observations are missing. A large number of missing values could affect the analysis, so they will have to either be removed or filled in with an estimate.
+
+Some useful functions for working with missing values include:
+- `isnull()`: Generates a boolean indicating missing values.
+- `fillna()`: Returns a copy of the data with missing values filled in
+- `dropna()`: Returns a filtered version of the data without missing values
+
+There are many ways of estimating missing values that cannot be covered in the scope of this lesson. Please take a look at the reference section below if you are interested in learning more.
+
 ## Data wrangling with Pandas
 Now to get wrangling! Open up the [Jupyter notebook associated with this lesson](./demonstration.ipynb) and lets get started.
 
@@ -68,5 +79,7 @@ Now to get wrangling! Open up the [Jupyter notebook associated with this lesson]
 [Pandas Practice - w3 resource](https://www.w3resource.com/python-exercises/pandas/index.php)
 
 [Pandas Practice](https://github.com/guipsamora/pandas_exercises)
+
+[Missing Data](https://jakevdp.github.io/PythonDataScienceHandbook/03.04-missing-values.html)
 
 
