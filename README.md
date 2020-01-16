@@ -7,15 +7,15 @@ The course will feature a short introduction of the key concepts, a quick demons
 
 ### [**Introduction**](./lesson-material/introduction.md)
 1. Who am I?
-2. What is data wrangling, and why is it an important skill?
-3. What is Pandas?
+2. What is data wrangling?
+    - Why is it an important skill?
+3. What is clean data?
+    - Common operations
+4. What is Pandas?
     - Data structures
     - Common functions
-4. Data wrangling with Pandas
-    - Reading and writing data
-    - Summarizing data
-    - Cleaning and manipulating data
-5. References and further reading
+    - Missing data
+    - Other considerations
 
 ### [**Demonstration**](./lesson-material/demonstration.ipynb)
 1. Read in data from source file

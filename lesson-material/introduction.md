@@ -20,12 +20,6 @@ In North America, a **wrangler** is someone who is employed to handle animals pr
 
 Data can come in various forms and can be accessed in several different ways, but the process of cleaning and transforming data stays more or less the same.
 
-### The data wrangling process
-1. Read the data into a structured form (like Pandas data structures below)
-2. Investigate the data to find missing values, outliers, and other potential problems
-3. Clean the data to fix the issues identified
-4. Use data for analysis or other purposes
-
 ### Why is it an important skill?
 
 > 80% of the data analysis process is spent cleaning and preparing data
@@ -47,11 +41,22 @@ There is no easy to follow set of rules when it comes to cleaning data because i
 3. Each column describes a characteristic of the observation (a person's height or name)
 4. Each type of observation is stored in a separate table (don't mix people with objects)
 
-For more details on what clean data really means, check out the paper on Tidy Data in referenes section below.
+For more details on what clean data really means, check out the paper on Tidy Data in references section below.
+
+### Common operations
+Based on the characteristics of clean data above, we can identify some common operations we need to perform on data to clean it up:
+
+1. Read the data into a structured form
+2. Investigate the data to find potential problems
+3. Clean the data to fix the issues identified
+    - Group or split rows and columns
+    - Fill in or remove missing values
+    - Remove outliers or unusual observations where appropriate
+4. Make clean data available for analysis or other purposes
 
 ## What is Pandas?
 
-Pandas is the most widely used data analysis library created for Python, and it has many built-in functions that will help with data wrangling.
+Pandas is the most widely used data analysis library created for Python, and it has many built-in functions that will help with data analysis, including cleaning data.
 
 As with all libraries, it's important to get some practice using them and to make sure to read the documentation. See the references section for a link to the official Pandas documentation, as well as some links to practice courses.
 
@@ -67,12 +72,16 @@ Pandas allows us to store our data in different data structures represented by P
 
 ### Common functions
 
-Once our data is stored in one of the two data structures, pandas has many different functions we can use to manipulate and summarize data. This not only includes operations on a single data structure, like adding, removing data and summarizing data, but also includes operations on multiple data structures to combine them.
+Given the common operations required to clean data above, we can use the following functions on our data structure to help with each step of the cleaning process:
 
-Some common operations include:
-- checking for outliers in your data, and deciding what to do with them (keep or remove)
-- filtering your dataset (AKA slicing) based on one or more conditions
-- adding new rows or columns by combining or splitting existing rows or columns
+| Operation | Function |
+|-----------|----------|
+|Read the data into a structured form | `read_csv()`, `read_sql()` |
+|Investigate potential problems | `head()`, `info()`, `shape`, `describe()`, `unique()`, `value_counts()`, `isnull()` |
+|Clean the data | `fillna()`, `dropna()`, `stack()`, `unstack()`, `groupby()` `explode()`|
+|Make clean data available | `to_csv()`, `to_sql()` |
+
+For more details on how to use these functions, take a look at the demonstration associated with this lesson.
 
 For a complete list of all functions, see Pandas documentation in the references section below.
 
@@ -80,12 +89,11 @@ For a complete list of all functions, see Pandas documentation in the references
 
 It's very common that you will get a dataset where values for certain observations are missing. A large number of missing values could affect the analysis, so they will have to either be removed or filled in with an estimate.
 
-Some useful functions for working with missing values include:
-- `isnull()`: Generates a boolean indicating missing values.
-- `fillna()`: Returns a copy of the data with missing values filled in
-- `dropna()`: Returns a filtered version of the data without missing values
-
 There are many ways of estimating missing values that cannot be covered in the scope of this lesson. Please take a look at the reference section below if you are interested in learning more.
+
+### Other considerations
+
+Depending on the nature of your project, you may have new data coming in on a regular basis. You will most likely have to clean all the new data as it comes in, so it's a good idea to turn your cleanup operations into a script that can be easily run on new data.
 
 ## Data wrangling with Pandas
 Now to get wrangling! Open up the [Jupyter notebook associated with this lesson](./demonstration.ipynb) and lets get started.
