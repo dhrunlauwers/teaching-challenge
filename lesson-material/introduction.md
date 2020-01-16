@@ -28,7 +28,7 @@ Data sources used in academics tend to be pre-processed and much cleaner than da
 
 Data preparation is not just a first step, but must be repeated many times over the course of analysis as new problems come to light or new data is collected.
 
-![](./images/real-data.jpg)
+<img src="./images/real-data.jpg" width="300" height="300">
 
 ## What is clean data?
 
