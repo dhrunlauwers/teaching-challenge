@@ -55,6 +55,7 @@ Based on the characteristics of clean data above, we can identify some common op
 4. Make clean data available for analysis or other purposes
 
 ## What is Pandas?
+![](./images/pandas.jfif)
 
 Pandas is the most widely used data analysis library created for Python, and it has many built-in functions that will help with data analysis, including cleaning data.
 
